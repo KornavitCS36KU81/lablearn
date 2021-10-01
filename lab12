@@ -1,0 +1,77 @@
+# 1.1
+maxx = ""
+while True:
+    standard = input()
+    if standard == "":
+        break
+    if len(standard) > len(maxx):
+        maxx = standard
+print(len(maxx))
+#1.2
+maxx = ""
+while True:
+    standard = input()
+    if standard == "":
+        break
+    if len(standard) > len(maxx):
+        maxx = standard
+print(maxx)
+
+#2
+ch = input()
+n = int(input())
+print(chr(ord(ch)+n))
+
+#3.1
+count = 1
+answer = ""
+while True:
+    s = input()
+    if s == "":
+        break
+    if count%2 != 0:
+        x = max(s)
+        answer += x
+    elif count%2 == 0:
+        x = min(s)
+        answer += x
+    count += 1
+print(answer)
+
+#4.1
+s = input()
+lower = ""
+upper = ""
+for i in s:
+    if i.islower():
+        lower += i
+    elif i.isupper():
+        upper += i
+print(len(lower))
+print(len(upper))
+
+#4.2
+s = input()
+total = ""
+for i in s:
+    if i.islower():
+        total += i.upper()
+    elif i.isupper():
+        total += i.lower()
+    else:
+        total += i
+print(total)
+#5
+oneline programming
+s = input();change = input();exchage = input();char = s.replace(change,exchage);count1=char.find(exchage);count2=char.count(exchage);print(count1,count2,char,sep = "\n")
+or
+direction
+s = input()
+change = input()
+exchage = input()
+char = s.replace(change,exchage)
+count1 = char.find(exchage)
+count2 = char.count(exchage)
+print(count1)
+print(count2)
+print(char)
